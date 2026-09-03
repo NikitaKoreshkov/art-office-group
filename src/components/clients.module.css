@@ -1,0 +1,10 @@
+.section {
+  padding-top: clamp(0.75rem, 2vw, 1.75rem);
+  padding-bottom: var(--section-py);
+}
+
+@media (min-width: 1024px) {
+  .section {
+    padding-top: clamp(0.5rem, 1.25vw, 0.875rem);
+  }
+}

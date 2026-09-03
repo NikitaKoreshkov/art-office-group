@@ -1,0 +1,650 @@
+.carouselRoot {
+  width: 100%;
+}
+
+@media (max-width: 1023px) {
+  .carouselRoot {
+    margin-inline: calc(-1 * var(--container-px));
+    width: calc(100% + 2 * var(--container-px));
+  }
+
+  .carouselRoot :global(#services-panel) {
+    --panel-radius: 20px;
+    margin-inline: 0.75rem;
+    width: calc(100% - 1.5rem);
+    box-shadow:
+      0 20px 48px rgba(30, 51, 64, 0.16),
+      0 8px 20px rgba(30, 51, 64, 0.08),
+      inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  }
+}
+
+.panelInner {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+}
+
+@media (max-width: 1023px) {
+  .panelInner {
+    display: block;
+  }
+}
+
+.slideWrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.slideGrid {
+  min-height: 400px;
+}
+
+@media (max-width: 1023px) {
+  .slideWrap {
+    height: 22rem;
+    touch-action: pan-y;
+  }
+
+  .slideGrid {
+    height: 100%;
+    min-height: 0;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .slideWrap {
+    height: 23.25rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .slideWrap {
+    height: 21.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slideGrid {
+    min-height: 420px;
+  }
+}
+
+/* ── Image reveal ── */
+.imageWrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.imageButton {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  cursor: zoom-in;
+}
+
+.imageButton:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.75);
+  outline-offset: -4px;
+}
+
+@media (max-width: 1023px) {
+  .imageWrap {
+    flex: 0 0 9rem;
+    height: 9rem;
+    aspect-ratio: auto;
+    max-height: none;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .imageWrap {
+    flex-basis: 10rem;
+    height: 10rem;
+  }
+}
+
+.imageInner {
+  position: absolute;
+  inset: 0;
+  animation: slideImageReveal 1.15s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.imageInner :global(img) {
+  transition: transform 8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.slideGrid:hover .imageInner :global(img) {
+  transform: scale(1.04);
+}
+
+.imageShine {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    115deg,
+    transparent 38%,
+    rgba(255, 255, 255, 0.06) 48%,
+    transparent 58%
+  );
+  animation: imageShine 1.4s cubic-bezier(0.22, 1, 0.36, 1) 0.2s both;
+  pointer-events: none;
+  z-index: 2;
+}
+
+@keyframes slideImageReveal {
+  from {
+    opacity: 0;
+    transform: scale(1.08);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes imageShine {
+  from {
+    opacity: 0;
+    transform: translateX(-30%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(30%);
+  }
+}
+
+/* ── Content pane ── */
+.contentPane {
+  background: linear-gradient(160deg, #ffffff 0%, #fafbfc 55%, #f6f7f9 100%);
+}
+
+@media (max-width: 1023px) {
+  .contentPane {
+    display: flex;
+    min-height: 0;
+    flex: 1;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 1rem 1.125rem 0.875rem;
+    background: #ffffff;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .contentPane {
+    padding: 1.125rem 1.5rem 1rem;
+  }
+}
+
+.contentBody {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1023px) {
+  .contentBody {
+    min-height: 0;
+    flex: 1;
+    overflow: hidden;
+  }
+}
+
+.contentTitle {
+  animation: slideContentUp 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.12s both;
+}
+
+.contentDescription {
+  animation: slideContentUp 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.22s both;
+}
+
+.contentCta {
+  animation: slideContentUp 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.34s both;
+}
+
+@media (max-width: 1023px) {
+  .contentTitle {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    min-height: calc(1.12em * 2);
+    font-size: clamp(1.25rem, 4.8vw, 1.625rem);
+    line-height: 1.12;
+  }
+
+  .contentDescription {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    min-height: 0;
+    margin-top: 0.625rem;
+    max-width: none;
+    font-size: 0.8125rem;
+    line-height: 1.65;
+  }
+
+  .contentCta {
+    margin-top: auto;
+    min-height: 3rem;
+    flex-shrink: 0;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.625rem;
+    letter-spacing: 0.14em;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .contentTitle {
+    font-size: clamp(1.375rem, 3.5vw, 1.75rem);
+  }
+
+  .contentDescription {
+    margin-top: 0.75rem;
+    font-size: 0.875rem;
+    line-height: 1.7;
+  }
+
+  .contentCta {
+    margin-top: 1.125rem;
+    min-height: 3.125rem;
+    font-size: 0.6875rem;
+    letter-spacing: 0.16em;
+  }
+}
+
+.indexWatermark {
+  animation: indexReveal 1s cubic-bezier(0.16, 1, 0.3, 1) 0.08s both;
+}
+
+@keyframes slideContentUp {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+    filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes indexReveal {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 1024px) {
+  .contentPane {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100%;
+    padding: 1.5rem 1.75rem;
+    border-left: 1px solid #e2e5eb;
+  }
+
+  .contentTitle {
+    min-height: 0;
+    font-size: clamp(1.125rem, 1.6vw, 1.75rem);
+    line-height: 1.1;
+  }
+
+  .contentDescription {
+    min-height: 0;
+    margin-top: 0.75rem;
+    max-width: 40ch;
+    font-size: 0.875rem;
+    line-height: 1.65;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+
+  .contentCta {
+    margin-top: 1.125rem;
+    min-height: 0;
+    padding: 0.75rem 1.375rem;
+    font-size: 0.625rem;
+    letter-spacing: 0.16em;
+  }
+
+  .indexWatermark {
+    right: 1rem;
+    top: 1rem;
+    font-size: clamp(2.25rem, 4vw, 3.5rem);
+  }
+}
+
+@media (min-width: 1700px) and (min-height: 880px) {
+  .contentPane {
+    padding: 2rem 2.5rem;
+  }
+
+  .contentTitle {
+    font-size: clamp(1.25rem, 2vw, 2.25rem);
+  }
+
+  .contentDescription {
+    margin-top: 1rem;
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    -webkit-line-clamp: 4;
+  }
+
+  .contentCta {
+    margin-top: 1.5rem;
+    padding: 0.8125rem 1.5rem;
+    font-size: 0.6875rem;
+    letter-spacing: 0.18em;
+  }
+
+  .indexWatermark {
+    right: 1.75rem;
+    top: 1.75rem;
+    font-size: clamp(2.75rem, 5vw, 5rem);
+  }
+}
+
+/* ── Nav rail ── */
+.navRail {
+  position: relative;
+  border-bottom: 1px solid rgba(226, 229, 235, 0.7);
+  background: linear-gradient(180deg, #f2f3f6 0%, #f9fafb 100%);
+}
+
+.navIndicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  z-index: 10;
+  border-radius: 2px 2px 0 0;
+  background: linear-gradient(90deg, #c41f1f 0%, #d42b2b 50%, #e84545 100%);
+  box-shadow:
+    0 0 20px rgba(212, 43, 43, 0.55),
+    0 2px 10px rgba(212, 43, 43, 0.3);
+  transition:
+    left 0.75s cubic-bezier(0.16, 1, 0.3, 1),
+    width 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.navIndicatorProgress {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.55);
+  transform-origin: left center;
+  transform: scaleX(0);
+  animation: navIndicatorProgress var(--progress-duration, 5500ms) linear forwards;
+}
+
+@keyframes navIndicatorProgress {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.navScroll {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none;
+  overscroll-behavior-x: contain;
+}
+
+@media (min-width: 670px) and (max-width: 1023px) {
+  .navScroll {
+    overflow-x: hidden;
+    justify-content: stretch;
+  }
+
+  .navTab {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navScroll {
+    overflow-x: hidden;
+  }
+
+  .navTab {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+}
+
+.navScroll::-webkit-scrollbar {
+  display: none;
+}
+
+.navTab {
+  transition:
+    background-color 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.navTabActive {
+  background: #ffffff;
+  box-shadow:
+    0 6px 24px rgba(40, 48, 61, 0.05),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.95);
+}
+
+.navTab:not(.navTabActive):hover {
+  background: rgba(255, 255, 255, 0.65);
+  transform: translateY(-1px);
+}
+
+.navIcon {
+  transition:
+    color 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.navTabActive .navIcon {
+  transform: scale(1.08);
+}
+
+.navLabel {
+  transition: color 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.navDivider {
+  background: linear-gradient(180deg, transparent 0%, #e2e5eb 20%, #e2e5eb 80%, transparent 100%);
+}
+
+/* ── CTA ── */
+.ctaButton {
+  position: relative;
+  overflow: hidden;
+  transition:
+    transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    background-color 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.ctaButton::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    transparent 40%,
+    rgba(255, 255, 255, 0.12) 50%,
+    transparent 60%
+  );
+  transform: translateX(-120%);
+  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+}
+
+.ctaButton:hover::before {
+  transform: translateX(120%);
+}
+
+.ctaArrow {
+  display: inline-block;
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ctaButton:hover .ctaArrow {
+  transform: translateX(5px);
+}
+
+/* ── Pagination badge ── */
+.slideBadge {
+  animation: badgeFade 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both;
+}
+
+@keyframes badgeFade {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Mobile dot track ── */
+.dotTrack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.375rem;
+  overflow-x: auto;
+  border-top: 1px solid rgba(30, 51, 64, 0.07);
+  background: linear-gradient(180deg, #f7f8fa 0%, #f0f2f5 100%);
+  padding: 0.75rem 1rem 0.875rem;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.dotTrack::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .dotTrack {
+    gap: 0.4375rem;
+    padding: 1rem 1.25rem 1.125rem;
+  }
+}
+
+.dot {
+  height: 0.375rem;
+  width: 0.375rem;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 999px;
+  background: rgba(30, 51, 64, 0.16);
+  padding: 0;
+  cursor: pointer;
+  transition:
+    transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    background-color 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dotActive {
+  height: 0.5rem;
+  width: 0.5rem;
+  background: #d42b2b;
+  box-shadow: 0 0 10px rgba(212, 43, 43, 0.55);
+  transform: scale(1.05);
+}
+
+.dot:focus-visible {
+  outline: 2px solid rgba(212, 43, 43, 0.55);
+  outline-offset: 3px;
+}
+
+/* ── Mobile indicator ── */
+.mobileIndicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  height: 2px;
+  overflow: hidden;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(212, 43, 43, 0.18) 22%,
+    rgba(212, 43, 43, 0.55) 50%,
+    rgba(212, 43, 43, 0.18) 78%,
+    transparent 100%
+  );
+  box-shadow: 0 0 18px rgba(212, 43, 43, 0.28);
+  pointer-events: none;
+}
+
+.mobileIndicatorProgress {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.5);
+  transform-origin: left center;
+  transform: scaleX(0);
+  animation: navIndicatorProgress var(--progress-duration, 5500ms) linear forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .imageInner,
+  .imageShine,
+  .contentTitle,
+  .contentDescription,
+  .contentCta,
+  .indexWatermark,
+  .slideBadge,
+  .navIndicator,
+  .mobileIndicatorProgress {
+    animation: none;
+    transition: none;
+  }
+
+  .imageInner :global(img),
+  .ctaButton,
+  .ctaArrow,
+  .navTab,
+  .navIcon {
+    transition: none;
+  }
+
+  .slideGrid:hover .imageInner :global(img) {
+    transform: none;
+  }
+
+  .navIndicatorProgress,
+  .mobileIndicatorProgress {
+    animation: none;
+    display: none;
+  }
+
+  .dot {
+    transition: none;
+  }
+}
+

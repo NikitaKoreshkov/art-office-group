@@ -1,0 +1,47 @@
+{
+  "name": "art-office",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "bash scripts/ensure-db.sh && next dev",
+    "dev:turbo": "next dev --turbopack",
+    "dev:clean": "rm -rf .next && next dev",
+    "dev:clean:turbo": "rm -rf .next && next dev --turbopack",
+    "clean": "rm -rf .next .next-build",
+    "content:sync": "npx tsx scripts/generate-content-json.ts",
+    "db:migrate": "npx tsx scripts/db-migrate.ts",
+    "db:seed": "npx tsx scripts/db-seed.ts",
+    "setup": "bash scripts/setup.sh",
+    "prebuild": "npm run optimize && npm run content:sync",
+    "build": "next build",
+    "build:legacy": "NEXT_DIST_DIR=.next-build next build",
+    "start": "next start -p 3000",
+    "deploy": "python3 scripts/deploy.py",
+    "lint": "eslint",
+    "optimize": "node scripts/optimize-all.mjs",
+    "optimize:assets": "node scripts/optimize-assets.mjs"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "jsonwebtoken": "^9.0.2",
+    "next": "^15.3.3",
+    "pg": "^8.21.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "sharp": "^0.34.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^20",
+    "@types/pg": "^8.20.0",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "^15.3.3",
+    "tailwindcss": "^4",
+    "tsx": "^4.20.3",
+    "typescript": "^5"
+  }
+}

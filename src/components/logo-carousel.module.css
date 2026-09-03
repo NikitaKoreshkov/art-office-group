@@ -1,0 +1,200 @@
+.root {
+  display: flex;
+  width: 100%;
+  min-width: 0;
+  flex-direction: column;
+  gap: 1.25rem;
+  touch-action: pan-y;
+  user-select: none;
+}
+
+.stage {
+  position: relative;
+  overflow: hidden;
+}
+
+.viewport {
+  position: relative;
+  min-height: 11.5rem;
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .viewport {
+    min-height: 12.5rem;
+  }
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.25rem 0.5rem 0.75rem;
+  animation: logo-carousel-in 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes logo-carousel-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.card {
+  display: flex;
+  width: min(100%, 20rem);
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.25rem;
+  border: 1px solid #eceef2;
+  background: #fff;
+  padding: 2rem 2.25rem;
+  box-shadow:
+    0 18px 44px rgba(40, 48, 61, 0.08),
+    0 4px 14px rgba(40, 48, 61, 0.04),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  transition: box-shadow 0.4s ease;
+}
+
+.cardPartners {
+  background: linear-gradient(180deg, #fff 0%, #fafbfc 100%);
+  box-shadow:
+    0 18px 44px rgba(30, 51, 64, 0.07),
+    0 4px 14px rgba(30, 51, 64, 0.04),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95);
+}
+
+.logoSlot {
+  position: relative;
+  height: 3.25rem;
+  width: min(72vw, 11rem);
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .logoSlot {
+    height: 3.75rem;
+    width: 12.5rem;
+  }
+}
+
+.logo {
+  object-fit: contain;
+  object-position: center;
+}
+
+.caption {
+  display: flex;
+  width: min(100%, 20rem);
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  text-align: center;
+}
+
+.name {
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #28303d;
+}
+
+.subtitle {
+  font-size: 0.8125rem;
+  line-height: 1.45;
+  color: #8b919c;
+}
+
+.progressTrack {
+  margin-top: 0.25rem;
+  height: 2px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(40, 48, 61, 0.08);
+}
+
+.progressFill {
+  height: 100%;
+  width: 0;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #d42b2b 0%, rgba(212, 43, 43, 0.45) 100%);
+  transform-origin: left center;
+}
+
+.progressFillRunning {
+  animation: logo-carousel-progress var(--advance-duration, 4000ms) linear forwards;
+}
+
+@keyframes logo-carousel-progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-inline: 0.25rem;
+}
+
+.counter {
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.06em;
+  color: #8b919c;
+}
+
+.dotTrack {
+  display: flex;
+  flex: 1;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  gap: 0.375rem;
+  overflow-x: auto;
+  padding-block: 0.125rem;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.dotTrack::-webkit-scrollbar {
+  display: none;
+}
+
+.dot {
+  height: 0.375rem;
+  width: 0.375rem;
+  flex-shrink: 0;
+  border-radius: 999px;
+  border: none;
+  background: rgba(40, 48, 61, 0.14);
+  padding: 0;
+  transition:
+    width 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 0.35s ease;
+}
+
+.dotActive {
+  width: 1.375rem;
+  background: #d42b2b;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slide {
+    animation: none;
+  }
+
+  .progressFillRunning {
+    animation: none;
+    width: 100%;
+  }
+}

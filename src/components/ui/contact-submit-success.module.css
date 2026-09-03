@@ -1,0 +1,91 @@
+.root {
+  display: flex;
+  min-height: 280px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-block: 2.5rem;
+  text-align: center;
+  animation: contactSuccessFadeIn 0.35s ease-out both;
+}
+
+.checkWrap {
+  display: flex;
+  height: 4.5rem;
+  width: 4.5rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+  border-radius: 9999px;
+  background: rgba(212, 43, 43, 0.1);
+}
+
+.checkSvg {
+  width: 3.25rem;
+  height: 3.25rem;
+}
+
+.checkCircle {
+  stroke: #d42b2b;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  animation: contactSuccessStroke 0.55s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkMark {
+  stroke: #d42b2b;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: contactSuccessStroke 0.35s cubic-bezier(0.65, 0, 0.45, 1) 0.45s forwards;
+}
+
+.title {
+  margin-bottom: 0.5rem;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.subtitle {
+  max-width: 18rem;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+@keyframes contactSuccessStroke {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes contactSuccessFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .root,
+  .checkCircle,
+  .checkMark {
+    animation: none;
+  }
+
+  .checkCircle,
+  .checkMark {
+    stroke-dashoffset: 0;
+  }
+}

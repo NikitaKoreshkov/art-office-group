@@ -1,0 +1,956 @@
+{
+  "version": 1,
+  "updatedAt": "2026-06-26T12:08:04.095Z",
+  "meta": {
+    "title": "ART OFFICE GROUP — стекло, алюминий, металл",
+    "titleTemplate": "%s | ART OFFICE GROUP",
+    "description": "ART OFFICE GROUP — производство и монтаж стеклянных конструкций, витражей, перегородок и фасадов в Алматы и по Казахстану.",
+    "ogTitle": "ART OFFICE GROUP — остекление под ключ",
+    "ogDescription": "Производство и монтаж стеклянных конструкций, витражей, перегородок и фасадов в Алматы и области.",
+    "siteUrl": "https://art-office.kz"
+  },
+  "branding": {
+    "companyName": "ART OFFICE GROUP",
+    "logo": "/images/log.png"
+  },
+  "header": {
+    "navLinks": [
+      {
+        "href": "#services",
+        "label": "Услуги"
+      },
+      {
+        "href": "#portfolio",
+        "label": "Проекты"
+      },
+      {
+        "href": "#clients",
+        "label": "Клиенты"
+      },
+      {
+        "href": "#partners",
+        "label": "Наши партнеры"
+      },
+      {
+        "href": "#contacts",
+        "label": "Контакты"
+      }
+    ],
+    "ctaButton": "Заказать звонок"
+  },
+  "hero": {
+    "enabled": true,
+    "poster": "/assets/hero-poster.jpg",
+    "video": "/assets/hero.mp4",
+    "badge": "16 лет · Алматы",
+    "title": "Профессиональное остекление",
+    "titleAccent": "под ключ",
+    "subtitle1": "Собственное производство и монтаж в Алматы",
+    "subtitle2": "Бесплатный выезд и замер",
+    "ctaPrimary": "Бесплатный замер",
+    "yearsCount": "16",
+    "yearsLabel": "лет на рынке",
+    "scrollHint": "Листайте"
+  },
+  "homeSections": {
+    "order": [
+      "services",
+      "advantages",
+      "portfolio",
+      "clients",
+      "partners",
+      "process",
+      "contacts"
+    ],
+    "services": {
+      "enabled": true,
+      "label": "Направления",
+      "title": "Что мы производим и монтируем",
+      "items": [
+        {
+          "id": "partitions",
+          "title": "Перегородки",
+          "description": "Стеклянные, алюминиевые, противопожарные, мобильные",
+          "icon": "partitions",
+          "image": "/images/services/partitions.jpg"
+        },
+        {
+          "id": "doors",
+          "title": "Двери",
+          "description": "Стеклянные, алюминиевые, металлические, автоматические",
+          "icon": "doors",
+          "image": "/images/services/doors.jpg"
+        },
+        {
+          "id": "windows",
+          "title": "Окна",
+          "description": "Алюминиевые окна для жилых и коммерческих объектов",
+          "icon": "windows",
+          "image": "/images/services/windows.jpg"
+        },
+        {
+          "id": "facades",
+          "title": "Витражи и фасады",
+          "description": "Фасадное остекление, витражные системы",
+          "icon": "facades",
+          "image": "/images/services/facades.jpg"
+        },
+        {
+          "id": "railings",
+          "title": "Системы ограждений",
+          "description": "Стеклянные ограждения для лестниц, балконов, террас",
+          "icon": "railings",
+          "image": "/images/services/railings.jpg"
+        },
+        {
+          "id": "glass",
+          "title": "Стеклянные козырьки",
+          "description": "Козырьки, полы, зеркала и другие конструкции",
+          "icon": "glass",
+          "image": "/images/services/glass.jpg"
+        },
+        {
+          "id": "shower",
+          "title": "Душевые кабины из стекла",
+          "description": "Индивидуальные душевые кабины, перегородки и ограждения из закалённого стекла",
+          "icon": "shower",
+          "image": "/images/services/shower.jpg"
+        },
+        {
+          "id": "design",
+          "title": "Проектирование",
+          "description": "Собственный проектный отдел и партнёрство с заводами-изготовителями",
+          "icon": "design",
+          "image": "/images/services/design.jpg"
+        }
+      ],
+      "extraOption": "Другое"
+    },
+    "advantages": {
+      "enabled": true,
+      "label": "Преимущества",
+      "title": "Почему с нами работают",
+      "items": [
+        {
+          "id": "turnkey",
+          "icon": "turnkey",
+          "title": "Полный цикл работ «под ключ»",
+          "shortTitle": "Под ключ",
+          "lead": "Берём на себя всё — от идеи до сдачи готового объекта.",
+          "text": "Вам не нужно искать проектировщиков, производство и монтажную бригаду отдельно. Мы ведём проект единой командой: согласуем конструкцию, изготавливаем на своём производстве, доставляем и монтируем на объекте. Сроки, качество и ответственность — на одной стороне.",
+          "highlights": [
+            "Единый подрядчик на все этапы",
+            "Прозрачная смета без скрытых работ",
+            "Сдача объекта в оговорённые сроки"
+          ]
+        },
+        {
+          "id": "production",
+          "icon": "design",
+          "title": "Производство полного цикла",
+          "shortTitle": "Полный цикл",
+          "lead": "Собственный проектный отдел, цех и склад — всё в одном месте.",
+          "text": "Проектируем конструкции под ваш объект, производим на собственном оборудовании и комплектуем со склада. Партнёрство с заводами-поставщиками позволяет подбирать оптимальные материалы и держать цены без лишних наценок посредников.",
+          "highlights": [
+            "Собственный проектный отдел",
+            "Производственный цех и склад",
+            "Прямые поставки от заводов"
+          ]
+        },
+        {
+          "id": "license",
+          "icon": "license",
+          "title": "Государственная строительная лицензия",
+          "shortTitle": "Лицензия",
+          "lead": "Работаем официально — с полным пакетом документов.",
+          "text": "Лицензия подтверждает право на все виды работ. Заключаем договор, предоставляем акты и гарантийные обязательства — без посредников и серых схем.",
+          "highlights": [
+            "Лицензия на все виды работ",
+            "Официальный договор и акты",
+            "Без посредников"
+          ]
+        },
+        {
+          "id": "measure",
+          "icon": "measure",
+          "title": "Бесплатный выезд, замер и расчёт проекта",
+          "shortTitle": "Бесплатный замер",
+          "lead": "Инженер приедет на объект, снимет размеры и подготовит расчёт — бесплатно.",
+          "text": "Выезд и замер не обязывают к заказу. Специалист осмотрит объект, уточнит задачу, предложит варианты конструкций и материалов. Вы получите понятную смету и сроки — до принятия решения о сотрудничестве.",
+          "highlights": [
+            "Расчёт стоимости без обязательств"
+          ]
+        }
+      ]
+    },
+    "portfolio": {
+      "enabled": true,
+      "label": "Портфолио",
+      "title": "Реализованные проекты",
+      "ctaText": "Смотреть проекты",
+      "ctaLink": "/projects",
+      "galleryButton": "Смотреть галерею",
+      "allProjectsLabel": "Все объекты",
+      "items": [
+        {
+          "id": "bmw",
+          "name": "BMW Lifestyle",
+          "type": "Шоурум",
+          "cover": "/images/portfolio/bmw-cover.jpg",
+          "gallery": [
+            "/images/portfolio/bmw-cover.jpg",
+            "/images/portfolio/bmw-1.jpg"
+          ],
+          "showOnHome": true
+        },
+        {
+          "id": "maqan",
+          "name": "Maqan Hotel Almaty",
+          "type": "Отель",
+          "cover": "/images/portfolio/maqan-cover.jpg",
+          "gallery": [
+            "/images/portfolio/maqan-cover.jpg",
+            "/images/portfolio/maqan-1.jpg",
+            "/images/portfolio/maqan-2.jpg"
+          ],
+          "showOnHome": true
+        },
+        {
+          "id": "galleria",
+          "name": "ТК «Galleria»",
+          "type": "Торговый комплекс",
+          "cover": "/images/portfolio/galleria-cover.jpg",
+          "gallery": [
+            "/images/portfolio/galleria-cover.jpg",
+            "/images/portfolio/galleria-1.jpg",
+            "/images/portfolio/galleria-2.jpg"
+          ],
+          "showOnHome": true
+        },
+        {
+          "id": "talgar",
+          "name": "Комплекс в г. Талгар",
+          "type": "Комплекс",
+          "cover": "/images/portfolio/talgar-cover.jpg",
+          "gallery": [
+            "/images/portfolio/talgar-cover.jpg",
+            "/images/portfolio/talgar-1.jpg",
+            "/images/portfolio/talgar-2.jpg"
+          ],
+          "showOnHome": true
+        },
+        {
+          "id": "burger-king",
+          "name": "Burger King",
+          "type": "Ресторан",
+          "cover": "/images/portfolio/burger-king-cover.jpg",
+          "gallery": [
+            "/images/portfolio/burger-king-cover.jpg",
+            "/images/portfolio/burger-king-1.jpg",
+            "/images/portfolio/burger-king-2.jpg"
+          ],
+          "showOnHome": true
+        },
+        {
+          "id": "china-restaurant",
+          "name": "China Restaurant",
+          "type": "Ресторан",
+          "cover": "/images/portfolio/china-cover.jpg",
+          "gallery": [
+            "/images/portfolio/china-cover.jpg",
+            "/images/portfolio/china-1.jpg",
+            "/images/portfolio/china-2.jpg",
+            "/images/portfolio/china-3.jpg"
+          ],
+          "showOnHome": true
+        },
+        {
+          "id": "extra-1",
+          "name": "Бизнес-центр «Almaty Tower»",
+          "type": "Офисный центр",
+          "cover": "/images/portfolio/extra-1-cover.jpg",
+          "gallery": [
+            "/images/portfolio/extra-1-cover.jpg"
+          ],
+          "showOnHome": false
+        },
+        {
+          "id": "extra-2",
+          "name": "ЖК «Glass House»",
+          "type": "Жилой комплекс",
+          "cover": "/images/portfolio/extra-2-cover.jpg",
+          "gallery": [
+            "/images/portfolio/extra-2-cover.jpg"
+          ],
+          "showOnHome": false
+        },
+        {
+          "id": "extra-3",
+          "name": "Торговый центр «Grand Mall»",
+          "type": "Торговый центр",
+          "cover": "/images/portfolio/extra-3-cover.jpg",
+          "gallery": [
+            "/images/portfolio/extra-3-cover.jpg"
+          ],
+          "showOnHome": false
+        },
+        {
+          "id": "extra-4",
+          "name": "Офис «TechPark»",
+          "type": "Офис",
+          "cover": "/images/portfolio/extra-4-cover.jpg",
+          "gallery": [
+            "/images/portfolio/extra-4-cover.jpg"
+          ],
+          "showOnHome": false
+        },
+        {
+          "id": "extra-5",
+          "name": "Ресторан «Crystal»",
+          "type": "Ресторан",
+          "cover": "/images/portfolio/extra-5-cover.jpg",
+          "gallery": [
+            "/images/portfolio/extra-5-cover.jpg"
+          ],
+          "showOnHome": false
+        },
+        {
+          "id": "extra-6",
+          "name": "Гостиница «View Hotel»",
+          "type": "Отель",
+          "cover": "/images/portfolio/extra-6-cover.jpg",
+          "gallery": [
+            "/images/portfolio/extra-6-cover.jpg"
+          ],
+          "showOnHome": false
+        },
+        {
+          "id": "extra-7",
+          "name": "Медицинский центр «MedCity»",
+          "type": "Медицинский центр",
+          "cover": "/images/portfolio/extra-7-cover.jpg",
+          "gallery": [
+            "/images/portfolio/extra-7-cover.jpg"
+          ],
+          "showOnHome": false
+        },
+        {
+          "id": "extra-8",
+          "name": "Банк «FinanceGroup»",
+          "type": "Банк",
+          "cover": "/images/portfolio/extra-8-cover.jpg",
+          "gallery": [
+            "/images/portfolio/extra-8-cover.jpg"
+          ],
+          "showOnHome": false
+        },
+        {
+          "id": "extra-9",
+          "name": "Спортивный комплекс «Arena»",
+          "type": "Спортивный объект",
+          "cover": "/images/portfolio/extra-9-cover.jpg",
+          "gallery": [
+            "/images/portfolio/extra-9-cover.jpg"
+          ],
+          "showOnHome": false
+        },
+        {
+          "id": "extra-10",
+          "name": "Жилой дом «Emerald»",
+          "type": "Жилой дом",
+          "cover": "/images/portfolio/extra-10-cover.jpg",
+          "gallery": [
+            "/images/portfolio/extra-10-cover.jpg"
+          ],
+          "showOnHome": false
+        },
+        {
+          "id": "extra-11",
+          "name": "Салон красоты «Luxe»",
+          "type": "Салон",
+          "cover": "/images/portfolio/extra-11-cover.jpg",
+          "gallery": [
+            "/images/portfolio/extra-11-cover.jpg"
+          ],
+          "showOnHome": false
+        },
+        {
+          "id": "extra-12",
+          "name": "Школа «International Academy»",
+          "type": "Образование",
+          "cover": "/images/portfolio/extra-12-cover.jpg",
+          "gallery": [
+            "/images/portfolio/extra-12-cover.jpg"
+          ],
+          "showOnHome": false
+        }
+      ]
+    },
+    "clients": {
+      "enabled": true,
+      "label": "Клиенты",
+      "title": "Нам доверяют",
+      "ctaText": "Все клиенты",
+      "ctaLink": "/clients",
+      "items": [
+        {
+          "id": "client-0",
+          "name": "BMW",
+          "src": "/images/clients/bmw.png",
+          "category": "Автомобильный сектор",
+          "highlight": "Остекление и фасады для премиального дилерского центра"
+        },
+        {
+          "id": "client-1",
+          "name": "Burger King",
+          "src": "/images/clients/burger-king.png",
+          "category": "HoReCa",
+          "highlight": "Стеклянные решения для ресторанов быстрого питания"
+        },
+        {
+          "id": "client-2",
+          "name": "Lukoil",
+          "src": "/images/clients/lukoil.png",
+          "category": "Нефть и энергетика",
+          "highlight": "Конструкции для объектов топливно-энергетического сектора"
+        },
+        {
+          "id": "client-3",
+          "name": "MEGA",
+          "src": "/images/clients/mega.png",
+          "category": "Торговый центр",
+          "highlight": "Витражи и фасадное остекление торговых комплексов"
+        },
+        {
+          "id": "client-4",
+          "name": "Rixos",
+          "src": "/images/clients/rixos.png",
+          "category": "Отельный бизнес",
+          "highlight": "Панорамное остекление и перегородки для отелей класса люкс"
+        },
+        {
+          "id": "client-5",
+          "name": "MINI",
+          "src": "/images/clients/mini.png",
+          "category": "Автомобильный сектор",
+          "highlight": "Архитектурное остекление автосалона"
+        },
+        {
+          "id": "client-6",
+          "name": "Volvo",
+          "src": "/images/clients/volvo.png",
+          "category": "Автомобильный сектор",
+          "highlight": "Стеклянные фасады и входные группы"
+        },
+        {
+          "id": "client-7",
+          "name": "Rahat Palace",
+          "src": "/images/clients/rahat-palace.png",
+          "category": "Отельный бизнес",
+          "highlight": "Индивидуальные конструкции для гостиничного комплекса"
+        },
+        {
+          "id": "client-8",
+          "name": "Aport",
+          "src": "/images/clients/aport.png",
+          "category": "Торговый центр",
+          "highlight": "Остекление и металлоконструкции торгового объекта"
+        },
+        {
+          "id": "client-9",
+          "name": "Indesit",
+          "src": "/images/clients/indesit.png",
+          "category": "Ритейл",
+          "highlight": "Стеклянные перегородки и витрины для брендовой зоны"
+        },
+        {
+          "id": "client-10",
+          "name": "Kumho",
+          "src": "/images/clients/kumho.png",
+          "category": "Автомобильный сектор",
+          "highlight": "Фасадные и интерьерные стеклянные системы"
+        },
+        {
+          "id": "client-11",
+          "name": "Rolls-Royce",
+          "src": "/images/clients/rolls-royce.png",
+          "category": "Автомобильный сектор",
+          "highlight": "Премиальное остекление для представительского салона"
+        }
+      ]
+    },
+    "partners": {
+      "enabled": true,
+      "label": "Партнёры",
+      "title": "Наши партнеры",
+      "subtitle": "Производители и поставщики материалов, которые мы применяем в производстве",
+      "ctaText": "Все партнёры",
+      "ctaLink": "/partners",
+      "items": [
+        {
+          "id": "partner-0",
+          "name": "Trimo",
+          "src": "/images/partners/trimo.png"
+        },
+        {
+          "id": "partner-1",
+          "name": "Metso",
+          "src": "/images/partners/metso.png"
+        },
+        {
+          "id": "partner-2",
+          "name": "Eurobak",
+          "src": "/images/partners/eurobak.png"
+        },
+        {
+          "id": "partner-3",
+          "name": "OTC",
+          "src": "/images/partners/otc.png"
+        },
+        {
+          "id": "partner-4",
+          "name": "TRS",
+          "src": "/images/partners/trs.png"
+        },
+        {
+          "id": "partner-5",
+          "name": "Galanz",
+          "src": "/images/partners/galanz.png"
+        },
+        {
+          "id": "partner-6",
+          "name": "BI Group",
+          "src": "/images/partners/BI-Grupp-1920x1028.png"
+        },
+        {
+          "id": "partner-7",
+          "name": "Hyundai",
+          "src": "/images/partners/hyundai.png"
+        },
+        {
+          "id": "partner-8",
+          "name": "Ромфарма",
+          "src": "/images/partners/7129-_D1_80_D0_BE_D0%BC_D1_84_D0_B0_D1_80_D0%BC_D0_B0-middle.png"
+        },
+        {
+          "id": "partner-9",
+          "name": "Astana Motors",
+          "src": "/images/partners/Astana_Motors_Logo.svg.png"
+        },
+        {
+          "id": "partner-10",
+          "name": "Eurasian Foods",
+          "src": "/images/partners/eurasian_foods.png"
+        },
+        {
+          "id": "partner-11",
+          "name": "KTZh",
+          "src": "/images/partners/ktzh.png"
+        },
+        {
+          "id": "partner-12",
+          "name": "Temir Zholy",
+          "src": "/images/partners/d926676b238d930654472298b6f02435.png"
+        },
+        {
+          "id": "partner-13",
+          "name": "Astra Lombard",
+          "src": "/images/partners/astra-lombard.png"
+        },
+        {
+          "id": "partner-14",
+          "name": "Baker Tilly",
+          "src": "/images/partners/baker_20tilly.png"
+        }
+      ]
+    },
+    "process": {
+      "enabled": true,
+      "label": "Процесс",
+      "title": "От заявки до сдачи проекта",
+      "accent": "— 3 шага",
+      "items": [
+        {
+          "id": "step-1",
+          "num": "01",
+          "title": "Заявка и консультация",
+          "text": "Обсуждаем задачу, объект, материалы, сроки"
+        },
+        {
+          "id": "step-2",
+          "num": "02",
+          "title": "Выезд, замер и расчёт",
+          "text": "Бесплатный выезд и замер. Готовим проект и смету"
+        },
+        {
+          "id": "step-3",
+          "num": "03",
+          "title": "Производство и монтаж",
+          "text": "Изготавливаем, привозим, монтируем, сдаём с ",
+          "highlight": "гарантией 5 лет"
+        }
+      ]
+    },
+    "contacts": {
+      "enabled": true,
+      "label": "Контакты",
+      "title": "Оставьте заявку — рассчитаем проект бесплатно",
+      "formTitle": "Бесплатный расчёт проекта",
+      "formSubtitle": "Перезвоним в рабочее время и обсудим детали",
+      "submitButton": "Отправить заявку",
+      "whatsappButton": "Написать в WhatsApp"
+    }
+  },
+  "contacts": {
+    "company": "ТОО «ART OFFICE GROUP»",
+    "address": "г. Алматы, ул. Сырбая Мауленова, 111, оф. 2",
+    "addressMeta": "Алмалинский район, 050012",
+    "mapCoordinates": {
+      "lat": 43.246373,
+      "lng": 76.934786
+    },
+    "phonePrimary": "+7 (700) 399 79 31",
+    "phoneSecondary": "+7 (727) 222 33 44",
+    "phonePrimaryHref": "tel:+77003997931",
+    "phoneSecondaryHref": "tel:+77272223344",
+    "email": "info@art-office.kz",
+    "whatsappPhone": "77003997931",
+    "whatsappMessage": "Здравствуйте! Хочу получить консультацию по остеклению от ART OFFICE GROUP.",
+    "hours": "Пн–Пт, 9:00–18:00",
+    "instagram": "https://www.instagram.com/artofficegroup/"
+  },
+  "footer": {
+    "year": 2026,
+    "location": "Алматы · Казахстан",
+    "copyrightSuffix": "Все права защищены."
+  },
+  "pages": {
+    "projects": {
+      "title": "Проекты",
+      "description": "Реализованные проекты ART OFFICE GROUP — остекление, фасады, перегородки в Алматы.",
+      "label": "Портфолио",
+      "heading": "Все реализованные проекты"
+    },
+    "clients": {
+      "title": "Клиенты",
+      "description": "Компании, которые доверили ART OFFICE GROUP остекление и монтаж.",
+      "label": "Клиенты",
+      "heading": "Нам доверяют ведущие компании"
+    },
+    "partners": {
+      "title": "Партнёры",
+      "description": "Производители и поставщики материалов ART OFFICE GROUP.",
+      "label": "Партнёры",
+      "heading": "Наши партнёры"
+    }
+  },
+  "kz": {
+    "contacts": {
+      "whatsappMessage": "Сәлеметсіз бе! Шынылау бойынша кеңес алғым келеді.",
+      "company": "ТОО «ART OFFICE GROUP»",
+      "address": "Алматы қ., Сырбayı Мауленов к-сі, 111, 2-кеңсе",
+      "addressMeta": "Алмалы ауданы, 050012",
+      "hours": "Дс–Жм, 9:00–18:00"
+    },
+    "header": {
+      "navLinks": [
+        {
+          "href": "#services",
+          "label": "Қызметтер"
+        },
+        {
+          "href": "#portfolio",
+          "label": "Жобалар"
+        },
+        {
+          "href": "#clients",
+          "label": "Клиенттер"
+        },
+        {
+          "href": "#partners",
+          "label": "Серіктестеріміз"
+        },
+        {
+          "href": "#contacts",
+          "label": "Байланыс"
+        }
+      ],
+      "ctaButton": "Кері қоңырауға тапсырыс"
+    },
+    "hero": {
+      "badge": "16 жыл · Алматы",
+      "title": "Кілтпен тапсырылатын кәсіби шынылау",
+      "titleAccent": "",
+      "subtitle1": "Алматыдағы меншікті өндіріс пен монтаждау жұмыстары",
+      "subtitle2": "Тегін өлшеу жұмыстары",
+      "ctaPrimary": "Есептеуге тапсырыс беру",
+      "yearsLabel": "жыл нарықта",
+      "scrollHint": "Төмен қарай"
+    },
+    "homeSections": {
+      "services": {
+        "label": "Бағыттар",
+        "title": "Біз өндіретін және орнататын конструкциялар",
+        "extraOption": "Басқа",
+        "items": [
+          {
+            "title": "Қалқалар",
+            "description": "Шыны, алюминий, өртке төзімді және жылжымалы қалқалар"
+          },
+          {
+            "title": "Есіктер",
+            "description": "Шыны, алюминий, металл және автоматты есіктер"
+          },
+          {
+            "title": "Терезелер",
+            "description": "Тұрғын және коммерциялық нысандарға арналған алюминий терезелер"
+          },
+          {
+            "title": "Витраждар мен қасбеттер",
+            "description": "Қасбеттік шынылау және витраж жүйелері"
+          },
+          {
+            "title": "Қоршау жүйелері",
+            "description": "Баспалдақ, балкон және террасаларға арналған шыны қоршаулар"
+          },
+          {
+            "title": "Шыны күнқағарлар",
+            "description": "Күнқағарлар, шыны едендер, айналар және басқа конструкциялар"
+          },
+          {
+            "title": "Шыны душ кабиналары",
+            "description": "Өлшемге сай жасалатын шыны душ кабиналары, қалқалар және қоршаулар"
+          },
+          {
+            "title": "Жобалау",
+            "description": "Өз жобалау бөліміміз және өндіруші зауыттармен серіктестік"
+          }
+        ]
+      },
+      "advantages": {
+        "label": "Артықшылықтар",
+        "title": "Неліктен бізді таңдайды",
+        "items": [
+          {
+            "title": "Кілтпен тапсырылатын жұмыстардың толық циклі",
+            "shortTitle": "Кілтпен тапсыру",
+            "lead": "Барлық жұмысты өз мойнымызға аламыз: идеядан бастап дайын нысанды тапсыруға дейін.",
+            "text": "Жобалаушыларды, өндірісті және монтаждау бригадасын бөлек іздеудің қажеті жоқ. Біз жобаны бірыңғай командамен жүргіземіз: конструкцияны келісеміз, өз өндірісімізде дайындаймыз, нысанға жеткіземіз және монтаждаймыз. Мерзім, сапа және жауапкершілік — бір тарапта.",
+            "highlights": [
+              "Барлық кезеңге арналған бірыңғай мердігер",
+              "Жасырын шығындарсыз ашық смета",
+              "Нысанды келісілген мерзімде тапсыру"
+            ]
+          },
+          {
+            "title": "Толық циклді өндіріс",
+            "shortTitle": "Толық цикл",
+            "lead": "Меншікті жобалау бөлімі, цех және қойма — бәрі бір жерде.",
+            "text": "Конструкцияларды нысаныңызға сай жобалаймыз, өз жабдығымызда өндіреміз және қоймадан жинақтаймыз. Өндіруші зауыттармен серіктестік оңтайлы материалдарды таңдауға және делдалдардың үстеме бағасынсыз тиімді бағаны сақтауға мүмкіндік береді.",
+            "highlights": [
+              "Меншікті жобалау бөлімі",
+              "Өндірістік цех пен қойма",
+              "Зауыттардан тікелей жеткізу"
+            ]
+          },
+          {
+            "title": "Мемлекеттік құрылыс лицензиясы",
+            "shortTitle": "Лицензия",
+            "lead": "Ресми түрде жұмыс істейміз және құжаттардың толық пакетін ұсынамыз.",
+            "text": "Лицензия барлық жұмыс түрлерін орындау құқығын растайды. Келісімшарт жасасып, актілер мен кепілдік міндеттемелерін береміз — делдалдарсыз және жасырын схемаларсыз.",
+            "highlights": [
+              "Барлық жұмыс түріне лицензия",
+              "Ресми келісімшарт пен актілер",
+              "Делдалдарсыз"
+            ]
+          },
+          {
+            "title": "Нысанға тегін бару, өлшеу және жобаны есептеу",
+            "shortTitle": "Тегін өлшеу",
+            "lead": "Инженер нысанға барып, өлшем алып, есепті тегін дайындайды.",
+            "text": "Нысанға бару мен өлшеу тапсырыс беруге міндеттемейді. Маман нысанды қарап, тапсырманы нақтылайды, конструкциялар мен материалдардың нұсқаларын ұсынады. Ынтымақтастық туралы шешім қабылдамай тұрып, түсінікті смета мен мерзімді аласыз.",
+            "highlights": [
+              "Құнын міндеттемесіз есептеу"
+            ]
+          }
+        ]
+      },
+      "portfolio": {
+        "label": "Портфолио",
+        "title": "Орындалған жобалар",
+        "ctaText": "Жобаларды көру",
+        "galleryButton": "Галереяны көру",
+        "allProjectsLabel": "Барлық нысандар",
+        "items": [
+          {
+            "type": "Шоурум"
+          },
+          {
+            "type": "Қонақ үй"
+          },
+          {
+            "type": "Сауда кешені"
+          },
+          {
+            "type": "Кешен"
+          },
+          {
+            "type": "Мейрамхана"
+          },
+          {
+            "type": "Мейрамхана"
+          },
+          {
+            "type": "Бизнес орталық"
+          },
+          {
+            "type": "Тұрғын үй кешені"
+          },
+          {
+            "type": "Сауда орталығы"
+          },
+          {
+            "type": "Кеңсе"
+          },
+          {
+            "type": "Мейрамхана"
+          },
+          {
+            "type": "Қонақ үй"
+          },
+          {
+            "type": "Медициналық орталық"
+          },
+          {
+            "type": "Банк"
+          },
+          {
+            "type": "Спорт нысаны"
+          },
+          {
+            "type": "Тұрғын үй"
+          },
+          {
+            "type": "Салон"
+          },
+          {
+            "type": "Білім беру нысаны"
+          }
+        ]
+      },
+      "clients": {
+        "label": "Клиенттер",
+        "title": "Бізге сенеді",
+        "ctaText": "Барлық клиенттер",
+        "items": [
+          {
+            "category": "Автокөлік саласы",
+            "highlight": "Премиум дилерлік орталыққа арналған шынылау және қасбет жұмыстары"
+          },
+          {
+            "category": "HoReCa",
+            "highlight": "Жылдам тамақтану мейрамханаларына арналған шыны шешімдер"
+          },
+          {
+            "category": "Мұнай және энергетика",
+            "highlight": "Отын-энергетика нысандарына арналған конструкциялар"
+          },
+          {
+            "category": "Сауда орталығы",
+            "highlight": "Сауда кешендеріне арналған витраждар мен қасбеттік шынылау"
+          },
+          {
+            "category": "Қонақүй бизнесі",
+            "highlight": "Люкс санатындағы қонақүйлерге арналған панорамалық шынылау және қалқалар"
+          },
+          {
+            "category": "Автокөлік саласы",
+            "highlight": "Автосалонға арналған архитектуралық шынылау"
+          },
+          {
+            "category": "Автокөлік саласы",
+            "highlight": "Шыны қасбеттер мен кіреберіс аймақтары"
+          },
+          {
+            "category": "Қонақүй бизнесі",
+            "highlight": "Қонақүй кешеніне арналған жеке конструкциялар"
+          },
+          {
+            "category": "Сауда орталығы",
+            "highlight": "Сауда нысанына арналған шынылау және металл конструкциялар"
+          },
+          {
+            "category": "Ритейл",
+            "highlight": "Бренд аймағына арналған шыны қалқалар мен витриналар"
+          },
+          {
+            "category": "Автокөлік саласы",
+            "highlight": "Қасбеттік және интерьерлік шыны жүйелері"
+          },
+          {
+            "category": "Автокөлік саласы",
+            "highlight": "Өкілдік салонға арналған премиум шынылау"
+          }
+        ]
+      },
+      "partners": {
+        "label": "Серіктестер",
+        "title": "Серіктестеріміз",
+        "subtitle": "Өндірісте қолданылатын материалдарды өндірушілер мен жеткізушілер",
+        "ctaText": "Барлық серіктестер"
+      },
+      "process": {
+        "label": "Процесс",
+        "title": "Өтінімнен дайын нысанды\nтапсырғанға дейін",
+        "accent": "— 3 қадам",
+        "items": [
+          {
+            "title": "Өтінім және кеңес беру",
+            "text": "Тапсырманы, нысанды, материалдарды және мерзімді талқылаймыз"
+          },
+          {
+            "title": "Маманның шығуы, өлшеуі және есептеу",
+            "text": "Маманның тегін шығуы және өлшеуі. Жоба мен сметаны дайындаймыз"
+          },
+          {
+            "title": "Өндіріс және монтаж",
+            "text": "Дайындаймыз, жеткіземіз, орнатамыз және 10 жылға дейінгі кепілдікпен тапсырамыз",
+            "highlight": null
+          }
+        ]
+      },
+      "contacts": {
+        "label": "Байланыс",
+        "title": "Өтінім қалдырыңыз — жобаңызды тегін есептеп береміз",
+        "formTitle": "Жобаны тегін есептеу",
+        "formSubtitle": "Жұмыс уақытында хабарласып, мәліметтерді нақтылаймыз",
+        "submitButton": "Өтінім қалдыру",
+        "whatsappButton": "WhatsApp арқылы жазу"
+      }
+    },
+    "footer": {
+      "location": "Алматы · Қазақстан",
+      "copyrightSuffix": "Барлық құқықтар қорғалған."
+    },
+    "pages": {
+      "projects": {
+        "title": "Жобалар",
+        "description": "ART OFFICE GROUP орындаған жобалар: Алматыдағы шынылау, қасбеттер және қалқалар.",
+        "label": "Портфолио",
+        "heading": "Барлық орындалған жобалар"
+      },
+      "clients": {
+        "title": "Клиенттер",
+        "description": "Шынылау және монтаж жұмыстарын ART OFFICE GROUP-қа сеніп тапсырған компаниялар.",
+        "label": "Клиенттер",
+        "heading": "Бізге жетекші компаниялар сенеді"
+      },
+      "partners": {
+        "title": "Серіктестер",
+        "description": "ART OFFICE GROUP жұмыс істейтін материал өндірушілер мен жеткізушілер.",
+        "label": "Серіктестер",
+        "heading": "Серіктестеріміз"
+      }
+    }
+  }
+}
